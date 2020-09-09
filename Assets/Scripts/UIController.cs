@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public GameObject pausePanel;
     public GameObject resumeButton;
     public GameObject nextLevelButton;
+    public GameObject tutorialUI;
     public Text levelClearText;
 
     private Scene currentActiveScene;
@@ -19,6 +20,15 @@ public class UIController : MonoBehaviour
     {
         currentActiveScene = SceneManager.GetActiveScene();
         mySceneController = GameObject.Find("Scene Manager").GetComponent<SceneController>();
+        TutorialScene();
+    }
+
+    private void TutorialScene()
+    {
+        if (currentActiveScene.name == "Level 1")
+        {
+            tutorialUI.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -78,6 +88,7 @@ public class UIController : MonoBehaviour
 
     public void BackToMenu()
     {
+        ResumeGame();
         mySceneController.MainMenu();
     }
 

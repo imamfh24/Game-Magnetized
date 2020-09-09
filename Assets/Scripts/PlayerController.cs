@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     public void HookedTower(Tower tower)
     {
         hookedTower = tower;
-        if (hookedTower)
+        if (hookedTower && !isPulled)
         {
             // Get distance from player to tower when hook;
             float distance = Vector2.Distance(transform.position, hookedTower.transform.position);
