@@ -1176,6 +1176,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6461338780999927726, guid: 75d111dfc45c3f8448aeaad5dd34e17f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461338780999927727, guid: 75d111dfc45c3f8448aeaad5dd34e17f,
+        type: 3}
+      propertyPath: m_Text
+      value: And Click Left Mouse Button to control the player to the Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461338781329356623, guid: 75d111dfc45c3f8448aeaad5dd34e17f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -602
+      objectReference: {fileID: 0}
     - target: {fileID: 6461338781638028882, guid: 75d111dfc45c3f8448aeaad5dd34e17f,
         type: 3}
       propertyPath: m_Name
